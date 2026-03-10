@@ -8,7 +8,7 @@ start proc
     call hash_cmp
 
     ;если ax == 0 то выполняется процедура правильного пароля, иначе неправильного
-    cmp аx, 0
+    cmp ax, 0
     je @@if_correct
     call wrong_password_proc
     jmp @@enfif
@@ -83,7 +83,7 @@ hash_cmp proc
         mov al, cs:[bx]
         cmp al, cs:[bp]
         mov ax, 1
-        jne @@end_cmр
+        jne @@end_cmp
         
         inc bx
         inc bp
