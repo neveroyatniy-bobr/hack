@@ -148,7 +148,7 @@ hash_cmp proc
     pop bp bx cx
 
     ret
-endp 
+endp
 
 correct_password_msg db "ai tigr", 0ah, "$"
   wrong_password_msg db "nonono" , 0ah, "$"
